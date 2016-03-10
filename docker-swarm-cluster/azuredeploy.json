@@ -14,6 +14,13 @@
       "metadata": {
         "description": "Number of Swarm worker nodes in the cluster."
       }
+    },
+    "vmSizeNode": {
+      "type": "string",
+      "defaultValue": "Standard_A0",
+      "metadata": {
+        "description": "Size of Swarm worker nodes in the cluster."
+      }
     }
   },
   "variables": {
@@ -22,7 +29,6 @@
     "vmNameMaster": "swarm-master-",
     "vmNameNode": "swarm-node-",
     "vmSizeMaster": "Standard_A0",
-    "vmSizeNode": "Standard_A2",
     "availabilitySetMasters": "swarm-masters-set",
     "availabilitySetNodes": "swarm-nodes-set",
     "osImagePublisher": "CoreOS",
