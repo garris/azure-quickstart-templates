@@ -426,7 +426,7 @@
           "id": "[resourceId('Microsoft.Compute/availabilitySets',variables('availabilitySetNodes'))]"
         },
         "hardwareProfile": {
-          "vmSize": "[variables('vmSizeNode')]"
+          "vmSize": "[parameters('vmSizeNode')]"
         },
         "osProfile": {
           "computerName": "[concat(variables('vmNameNode'), copyIndex())]",
